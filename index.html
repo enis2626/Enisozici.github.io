@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>HS Garage Oto Lastik | Eskişehir Lastik Değişim & Balans</title>
+<title>HS Garage Oto Lastik | Eskişehir</title>
 
-<meta name="description" content="Eskişehir oto lastik, lastik değişimi, balans ayarı ve jant hizmetleri. HS Garage Oto Lastik.">
+<meta name="description" content="Eskişehir Tepebaşı oto lastik hizmetleri: lastik değişimi, balans ayarı ve lastik tamiri.">
 
 <style>
 body {
@@ -22,26 +22,27 @@ nav {
   padding: 15px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  margin: 5px 10px;
-  font-weight: bold;
+  margin-left: 15px;
 }
 
 /* HERO */
 .hero {
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+  url('lastik-gorsel.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
   text-align: center;
-  padding: 60px 20px;
-  background: #111;
 }
 
 .hero h1 {
   color: #ff3c3c;
-  font-size: 28px;
+  font-size: 32px;
 }
 
 .hero p {
@@ -49,59 +50,65 @@ nav a {
 }
 
 .btn {
-  display: inline-block;
   margin-top: 15px;
+  display: inline-block;
   padding: 12px 18px;
   background: #d40000;
-  color: white;
+  color: #fff;
   text-decoration: none;
   border-radius: 6px;
 }
 
-/* SECTIONS */
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 20px;
+/* HİZMET BUTTON ALANI */
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 30px;
+  flex-wrap: wrap;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.card {
+.service-btn {
   background: #1c1c1c;
-  border-radius: 12px;
-  overflow: hidden;
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
   transition: 0.3s;
 }
 
-.card:hover {
-  transform: scale(1.03);
+.service-btn:hover {
+  background: #d40000;
 }
 
-.card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
+/* BİLGİ */
+.section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 20px;
 }
 
-.card-content {
-  padding: 15px;
-}
-
-.card h2 {
+.section h2 {
   color: #ff3c3c;
 }
 
-/* INFO AREA */
-.info {
-  background: #1a1a1a;
-  padding: 20px;
-  border-radius: 12px;
-  margin-top: 30px;
+/* ALT CTA */
+.cta {
+  background: #d40000;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.cta h2 {
+  margin-bottom: 10px;
+}
+
+.cta a {
+  background: #fff;
+  color: #d40000;
+  padding: 12px 18px;
+  text-decoration: none;
+  border-radius: 6px;
 }
 
 /* FOOTER */
@@ -109,14 +116,12 @@ footer {
   text-align: center;
   padding: 20px;
   background: #111;
-  margin-top: 30px;
 }
 </style>
 
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <div><strong>HS GARAGE</strong></div>
   <div>
@@ -129,81 +134,46 @@ footer {
 
 <!-- HERO -->
 <div class="hero">
-  <h1>Eskişehir Oto Lastik & Jant Hizmetleri</h1>
-  <p>Kışlık - Yazlık Lastik | Balans | Lastik Değişimi</p>
+  <h1>Eskişehir Oto Lastik Hizmetleri</h1>
+  <p>Kışlık - Yazlık Lastik | Balans | Tamir</p>
   <a href="tel:05317284399" class="btn">Hemen Ara</a>
 </div>
 
-<!-- HİZMET KARTLARI -->
-<div class="container">
-<h2>Hizmetlerimiz</h2>
-
-<div class="grid">
-
-<div class="card">
-<img src="eskisehir-lastik-degisim.jpg" alt="lastik değişimi">
-<div class="card-content">
-<h2>Lastik Değişimi</h2>
-<p>Kışlık ve yazlık lastik değişimi profesyonel şekilde yapılır.</p>
-</div>
+<!-- HİZMET YÖNLENDİRME -->
+<div class="services">
+  <a href="hizmetler.html" class="service-btn">Lastik Değişimi</a>
+  <a href="hizmetler.html" class="service-btn">Balans Ayarı</a>
+  <a href="hizmetler.html" class="service-btn">Lastik Tamiri</a>
 </div>
 
-<div class="card">
-<img src="balans-ayari-eskisehir.jpg" alt="balans">
-<div class="card-content">
-<h2>Balans Ayarı</h2>
-<p>Direksiyon titremesi için profesyonel balans hizmeti.</p>
-</div>
-</div>
-
-<div class="card">
-<img src="lastik-tamir-eskisehir.jpg" alt="lastik tamir">
-<div class="card-content">
-<h2>Lastik Tamiri</h2>
-<p>Patlak ve hasarlı lastikler için güvenli tamir hizmeti.</p>
-</div>
+<!-- BİLGİ -->
+<div class="section">
+  <h2>Eskişehir Tepebaşı Oto Lastik Servisi</h2>
+  <p>
+  HS Garage Oto Lastik olarak Eskişehir Tepebaşı bölgesinde 
+  araçlarınız için güvenilir ve hızlı lastik hizmeti sunuyoruz. 
+  Lastik değişimi, balans ayarı ve lastik tamiri işlemleri profesyonel ekipmanlarla yapılmaktadır.
+  </p>
 </div>
 
+<div class="section">
+  <h2>Neden Bizi Tercih Etmelisiniz?</h2>
+  <p>
+  ✔ Hızlı hizmet<br>
+  ✔ Uygun fiyat<br>
+  ✔ Güvenilir işçilik<br>
+  ✔ Müşteri memnuniyeti
+  </p>
 </div>
 
-<!-- EK BİLGİ (BOŞLUK KAPATMA) -->
-<div class="info">
-<h2>Eskişehir’de Güvenilir Lastik Servisi</h2>
-<p>
-HS Garage Oto Lastik olarak Eskişehir Tepebaşı bölgesinde 
-hızlı, güvenilir ve profesyonel lastik hizmeti sunuyoruz. 
-Kışlık ve yazlık lastik değişimi, balans ayarı ve jant hizmetleri ile aracınızı güvenli hale getiriyoruz.
-</p>
-</div>
-
-<!-- JANT GÖRSEL ALANI -->
-<div class="info">
-<h2>Jant ve Lastik Görselleri</h2>
-<div class="grid">
-
-<div class="card">
-<img src="jants.jpg" alt="jant">
-<div class="card-content">
-<h2>Jant Hizmeti</h2>
-<p>Estetik ve performans için jant kontrolü ve değişimi.</p>
-</div>
-</div>
-
-<div class="card">
-<img src="lastik-gorsel.jpg" alt="lastik">
-<div class="card-content">
-<h2>Lastik Kontrol</h2>
-<p>Lastik aşınma ve güvenlik kontrolleri yapılır.</p>
-</div>
-</div>
-
-</div>
-</div>
-
+<!-- CTA -->
+<div class="cta">
+  <h2>Hemen Gelin, Beklemeden Hizmet Alın</h2>
+  <a href="tel:05317284399">Şimdi Ara</a>
 </div>
 
 <footer>
-📍 Eskişehir | HS Garage Oto Lastik  
+📍 Eskişehir Tepebaşı | HS Garage  
 📞 0531 728 43 99
 </footer>
 
