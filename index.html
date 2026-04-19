@@ -4,55 +4,56 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>HS Garage Oto Lastik | Eskişehir Lastik Değişim & Balans</title>
+<title>HS Garage Oto Lastik | Eskişehir</title>
 
-<meta name="description" content="Eskişehir oto lastik, kışlık yazlık lastik değişimi, balans ayarı ve hızlı servis. HS Garage Oto Lastik.">
+<meta name="description" content="Eskişehir oto lastik, balans, lastik değişimi ve tamir hizmetleri. HS Garage.">
 
 <style>
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #0f0f0f;
   color: #fff;
 }
 
-/* NAVBAR */
-nav {
-  background: #d40000;
-  display: flex;
-  justify-content: space-between;
-  padding: 15px;
-  flex-wrap: wrap;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 5px 10px;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* HERO */
+/* 🌄 ARKA PLAN ARABA */
 .hero {
+  position: relative;
+  height: 100vh;
+  background: url('araba-arka-plan.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 60px 20px;
-  background: #111;
+}
+
+/* AÇIK RENK OVERLAY (karanlığı kaldırdık) */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.55);
+}
+
+/* İÇERİK */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #111;
 }
 
 .hero h1 {
-  font-size: 28px;
-  color: #ff3c3c;
+  font-size: 32px;
+  color: #d40000;
 }
 
 .hero p {
   font-size: 16px;
-  color: #ccc;
 }
 
+/* BUTON */
 .btn {
   display: inline-block;
   margin-top: 15px;
@@ -67,11 +68,27 @@ nav a:hover {
   background: #ff0000;
 }
 
-/* KUTULAR */
+/* NAV */
+nav {
+  background: rgba(255,255,255,0.9);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #111;
+  text-decoration: none;
+  margin: 5px 10px;
+  font-weight: bold;
+}
+
+/* HİZMET ÖZET */
 .container {
+  padding: 40px 20px;
   max-width: 1100px;
   margin: auto;
-  padding: 20px;
 }
 
 .grid {
@@ -81,26 +98,27 @@ nav a:hover {
 }
 
 .card {
-  background: #1c1c1c;
+  background: #f5f5f5;
+  color: #111;
   padding: 20px;
   border-radius: 12px;
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .card h2 {
-  color: #ff3c3c;
+  color: #d40000;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
-  background: #111;
-  margin-top: 30px;
+  background: #eee;
+  color: #111;
 }
 </style>
 
@@ -120,35 +138,35 @@ footer {
 
 <!-- HERO -->
 <div class="hero">
-  <h1>Eskişehir Oto Lastik & Balans Hizmetleri</h1>
-  <p>Kışlık - Yazlık Lastik Değişimi | Balans | Hızlı Servis</p>
-  <a href="tel:05317284399" class="btn">Hemen Ara</a>
+  <div class="hero-content">
+    <h1>Eskişehir Oto Lastik Hizmetleri</h1>
+    <p>Kışlık - Yazlık Lastik | Balans | Lastik Değişimi</p>
+    <a href="tel:05317284399" class="btn">Hemen Ara</a>
+  </div>
 </div>
 
 <!-- HİZMET ÖZET -->
 <div class="container">
-
 <h2>Hizmetlerimiz</h2>
 
 <div class="grid">
 
 <div class="card">
 <h2>Lastik Değişimi</h2>
-<p>Kışlık ve yazlık lastik değişimi hızlı ve güvenli şekilde yapılır.</p>
+<p>Yazlık ve kışlık lastik değişimi profesyonel şekilde yapılır.</p>
 </div>
 
 <div class="card">
 <h2>Balans Ayarı</h2>
-<p>Direksiyon titremesini ortadan kaldıran profesyonel balans hizmeti.</p>
+<p>Direksiyon titremesini ortadan kaldıran balans hizmeti.</p>
 </div>
 
 <div class="card">
-<h2>Hızlı Servis</h2>
-<p>Beklemeden hızlı lastik işlemleri.</p>
+<h2>Lastik Tamiri</h2>
+<p>Patlak veya hasarlı lastikler için profesyonel tamir hizmeti.</p>
 </div>
 
 </div>
-
 </div>
 
 <footer>
